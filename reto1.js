@@ -53,7 +53,7 @@ const giftIds = [2, 1, 3, 5, 33, 22,6,8,9,0,33,4,5, 3, 2];
 
 //Solucion 2
 function findFirstRepeated2(gifts) {
-    let saveGifts =new Set();
+    let saveGifts = new Set();
     for(gift in gifts){
         if(saveGifts.has(gifts[gift])){return gifts[gift];}
             saveGifts.add(gifts[gift]);
